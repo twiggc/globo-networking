@@ -17,7 +17,7 @@ data "aws_availability_zones" "available" {}
 ##################################################################################
 locals {
   common_tags = {
-    
+
   }
 }
 
