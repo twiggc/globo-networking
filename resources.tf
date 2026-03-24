@@ -40,3 +40,19 @@ module "main" {
 
   tags = local.common_tags
 }
+
+resource "aws_security_group" "ingress" {
+  description            = "default VPC security group"
+  egress                 = []
+  ingress                = []
+  name                   = "default"
+  name_prefix            = null
+  revoke_rules_on_delete = null
+  tags = {
+    Name = "sg-no-ingress"
+  }
+  tags_all = {
+    Name = "sg-no-ingress"
+  }
+  vpc_id = "vpc-04b4230765613f68a"
+}
