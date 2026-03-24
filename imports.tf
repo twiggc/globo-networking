@@ -44,5 +44,6 @@ import {
 
 import {
   to = aws_security_group.ingress
-  id = "NoIngressSecurityGroup" #NoIngressSecurityGroup
+  #id = "NoIngressSecurityGroup" #NoIngressSecurityGroup
+  id = "no-ingress-sg"
 }
